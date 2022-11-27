@@ -1,0 +1,32 @@
+.Card {
+  @apply rounded-lg bg-slate-900 p-2;
+  @apply grid grid-cols-2 gap-2;
+
+  .life {
+    @apply flex flex-row justify-center;
+
+    div {
+      @apply grow;
+    }
+  }
+
+  input {
+    @apply text-center;
+    @apply bg-white;
+    @apply text-black;
+    @apply w-full;
+  }
+
+  .button {
+    @apply col-span-full;
+  }
+
+  .validtate {
+    @apply text-black;
+    @apply bg-green-500;
+  }
+  .selected {
+    @apply text-black;
+    @apply bg-blue-300;
+  }
+}

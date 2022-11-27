@@ -1,0 +1,37 @@
+.Dice {
+  @apply bg-gray-100/50;
+  @apply flex flex-col p-2 gap-2;
+  @apply rounded-2xl;
+  @apply whitespace-nowrap;
+  @apply w-fit h-96;
+
+  .history {
+    @apply bg-slate-700;
+    @apply p-2 flex flex-col;
+    @apply overflow-y-scroll h-full;
+
+    .action {
+      @apply flex flex-row justify-between;
+      @apply bg-slate-900;
+      @apply m-1 p-2;
+      @apply rounded-lg;
+    }
+
+    .success {
+      @apply text-green-600;
+    }
+
+    .failure {
+      @apply text-red-800;
+    }
+  }
+
+  .bottom {
+    @apply flex flex-row justify-between;
+
+    select {
+      @apply text-center;
+      @apply rounded-lg;
+    }
+  }
+}

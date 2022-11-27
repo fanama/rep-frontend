@@ -1,0 +1,25 @@
+.board {
+  @apply grid gap-4 grid-cols-5 grid-rows-3;
+
+  h1 {
+    @apply col-start-1 col-end-3;
+    @apply text-center;
+  }
+
+  .list {
+    @apply max-h-40;
+    @apply overflow-y-scroll;
+    @apply bg-red-900;
+    @apply rounded-tl-lg rounded-bl-lg;
+  }
+
+  .right {
+    @apply row-start-1;
+    @apply col-start-5;
+  }
+
+  .dice {
+    @apply row-start-2;
+    @apply col-start-5;
+  }
+}
